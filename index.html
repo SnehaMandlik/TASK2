@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Application with Images</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="container">
+        <div id="rules-section" class="section">
+            <h1>Quiz Application</h1>
+            <h2>Rules</h2>
+            <ul>
+                <li>The quiz consists of multiple-choice questions with images.</li>
+                <li>Each correct answer earns you 1 point.</li>
+                <li>You have a total of 30 seconds to complete the quiz.</li>
+                <li>Click "Start Quiz" to begin.</li>
+            </ul>
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        
+        <div id="quiz-section" class="section" style="display: none;">
+            <div id="timer">Time Left: <span id="time">30</span> seconds</div>
+            <div id="quiz-container">
+                <div id="question"></div>
+                <div id="image-container"></div>
+                <div id="answers"></div>
+                <button id="next-button" style="display: none;">Next</button>
+            </div>
+            <div id="result" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="scriptt.js"></script>
+</body>
+</html>
